@@ -74,7 +74,7 @@ export default function MainPage() {
             </Text>
 
             <Box w='50%' ml={{md:'3rem', base:'0'}}>
-              <Heading as='h3' size='md' mb='1'>IELTs 7.5/9.0 😘 :</Heading>
+              {/* <Heading as='h3' size='md' mb='1'>IELTs 7.5/9.0 😘 :</Heading>
               <Progress 
               w='80%'
               borderStyle='solid'
@@ -120,7 +120,7 @@ export default function MainPage() {
               borderRadius={20}
               value={1} 
               mb={3}
-              />
+              /> */}
               
             </Box>
 
