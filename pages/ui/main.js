@@ -92,7 +92,7 @@ export default function MainPage() {
               borderStyle='solid'
               borderWidth='2px'
               borderColor='black'
-              colorScheme='black'
+              colorScheme='purple'
               borderRadius={20}
               value={80} 
               mb={3}
