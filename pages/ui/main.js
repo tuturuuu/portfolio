@@ -17,10 +17,7 @@ import {
   Java,
   React,
   Android,
-  BirthdayCelebration,
-  JavaCoffee,
-  University,
-  Now, Github,
+  Github,
   Linkedin,
   Instagram,
   Facebook
@@ -204,10 +201,15 @@ export default function MainPage() {
             /* Bio */
           </Heading>
           <Box display={{lg:"flex"}}>
-            <Box ml="0.5rem">
-              <BirthdayCelebration boxSize="50px" mb={4} />
+            
+            <Box>
+            {/* <Image src="/images/me.png" width='25rem'/> */}
 
-              <Text display="inline" fontWeight="Bold" fontSize="1.5rem" ml={5}>
+            </Box>
+            
+            <Box ml="0.5rem">
+
+              <Text display="inline" fontWeight="Bold" fontSize="1.5rem">
                 2005:{" "}
               </Text>
               <Text display="inline" fontSize="1.3rem">
@@ -226,9 +228,8 @@ export default function MainPage() {
                 </Center>
               </Box>
 
-              <JavaCoffee boxSize="50px" mb={4} />
 
-              <Text display="inline" fontWeight="Bold" fontSize="1.5rem" ml={5}>
+              <Text display="inline" fontWeight="Bold" fontSize="1.5rem">
                 2020:{" "}
               </Text>
               <Text display="inline" fontSize="1.3rem">
@@ -248,9 +249,8 @@ export default function MainPage() {
                 </Center>
               </Box>
 
-              <University boxSize="50px" mb={4} />
 
-              <Text display="inline" fontWeight="Bold" fontSize="1.5rem" ml={5}>
+              <Text display="inline" fontWeight="Bold" fontSize="1.5rem">
                 2023:{" "}
               </Text>
               <Text display="inline" fontSize="1.3rem">
@@ -270,8 +270,7 @@ export default function MainPage() {
                 </Center>
               </Box>
 
-              <Now boxSize="50px" mb={4} />
-              <Text display="inline" fontWeight="Bold" fontSize="1.5rem" ml={5}>
+              <Text display="inline" fontWeight="Bold" fontSize="1.5rem">
                 2024 ( now ) :{" "}
               </Text>
               <Text display="inline" fontSize="1.3rem">
