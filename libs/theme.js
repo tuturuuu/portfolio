@@ -43,6 +43,7 @@ const components = {
 
   Link: {
     baseStyle: (props) => ({
+      fontSize: "lg",
       color: mode("#363844", "white")(props),
       textUnderlineOffset: 3,
     }),

@@ -1,8 +1,30 @@
-import { Container, Box, Heading, Text, Image, Button, Center, Divider } from "@chakra-ui/react";
+import {
+  Container,
+  Box,
+  Heading,
+  Text,
+  Image,
+  Button,
+  Center,
+  Divider,
+  Link,
+  IconButton
+} from "@chakra-ui/react";
 import { useColorModeValue } from "@chakra-ui/react";
 import Section from "./fragments/section";
 import Expertise from "./fragments/expertise-box";
-import { Java, React, Android, BirthdayCelebration, JavaCoffee, University, Now } from "./fragments/icons";
+import {
+  Java,
+  React,
+  Android,
+  BirthdayCelebration,
+  JavaCoffee,
+  University,
+  Now, Github,
+  Linkedin,
+  Instagram,
+  Facebook
+} from "./fragments/icons";
 import CountUp from "./fragments/countUp";
 
 
@@ -33,7 +55,6 @@ export default function MainPage() {
             ml={{ lg: "10" }}
             src="/images/profilePic.png"
             alt="Profile pic"
-            display="inline-block"
             maxWidth="200px"
             borderRadius="full"
             borderColor="lightBrown"
@@ -113,6 +134,9 @@ export default function MainPage() {
             </Box>
           </Box>
 
+          </Section>
+
+          <Section delay={0.2}>
           {/* Expertise */}
           <Heading
             as="h3"
@@ -121,7 +145,7 @@ export default function MainPage() {
             align="left"
             mt="10rem"
           >
-            /* My Expertise */
+            /* My skillset */
           </Heading>
 
           <Box display={{ xl: "flex" }}>
@@ -172,86 +196,145 @@ export default function MainPage() {
               text="I self-taught myself to develop native Android applications using Java and Android Studio. And I'll learn Kotlin in the future. "
             />
           </Box>
+          </Section>
 
+          <Section delay={0.3}>
           {/* Bio */}
-          <Heading as="h3" variant="section-title" mt="10rem" mb='2rem'>
+          <Heading as="h3" variant="section-title" mt="10rem" mb="2rem">
             /* Bio */
           </Heading>
-          <Box ml='2rem'>
-            <BirthdayCelebration boxSize="50px" mb={4} />
+          <Box display={{lg:"flex"}}>
+            <Box ml="0.5rem">
+              <BirthdayCelebration boxSize="50px" mb={4} />
 
-            <Text display="inline" fontWeight="Bold" fontSize="1.5rem" ml={5}>
-              2005:{" "}
-            </Text>
-            <Text display="inline" fontSize="1.3rem">
-              Born in Hanoi, Vietnam
-            </Text>
+              <Text display="inline" fontWeight="Bold" fontSize="1.5rem" ml={5}>
+                2005:{" "}
+              </Text>
+              <Text display="inline" fontSize="1.3rem">
+                Born in Hanoi, Vietnam
+              </Text>
 
-            <Box w="1%" ml={4} mb={4}>
-              <Center>
-                <Divider
-                  height="35px"
-                  orientation="vertical"
-                  borderWidth="1px"
-                  borderStyle="solid"
-                  borderColor="black"
-                />
-              </Center>
+              <Box w="1%" ml={4} mb={4}>
+                <Center>
+                  <Divider
+                    height="35px"
+                    orientation="vertical"
+                    borderWidth="1px"
+                    borderStyle="solid"
+                    borderColor="black"
+                  />
+                </Center>
+              </Box>
+
+              <JavaCoffee boxSize="50px" mb={4} />
+
+              <Text display="inline" fontWeight="Bold" fontSize="1.5rem" ml={5}>
+                2020:{" "}
+              </Text>
+              <Text display="inline" fontSize="1.3rem">
+                Started study programming, learning C and Java
+              </Text>
+              <br />
+
+              <Box w="1%" ml={4} mb={4}>
+                <Center>
+                  <Divider
+                    height="35px"
+                    orientation="vertical"
+                    borderWidth="1px"
+                    borderStyle="solid"
+                    borderColor="black"
+                  />
+                </Center>
+              </Box>
+
+              <University boxSize="50px" mb={4} />
+
+              <Text display="inline" fontWeight="Bold" fontSize="1.5rem" ml={5}>
+                2023:{" "}
+              </Text>
+              <Text display="inline" fontSize="1.3rem">
+                Applied to Swinburne University in Vietnam
+              </Text>
+              <br />
+
+              <Box w="1%" ml={4} mb={4}>
+                <Center>
+                  <Divider
+                    height="35px"
+                    orientation="vertical"
+                    borderWidth="1px"
+                    borderStyle="solid"
+                    borderColor="black"
+                  />
+                </Center>
+              </Box>
+
+              <Now boxSize="50px" mb={4} />
+              <Text display="inline" fontWeight="Bold" fontSize="1.5rem" ml={5}>
+                2024 ( now ) :{" "}
+              </Text>
+              <Text display="inline" fontSize="1.3rem">
+                Studing software engineer and looking for a job
+              </Text>
             </Box>
+          </Box>
+          
+          <Divider
+                    orientation="horizontal"
+                    borderWidth="1px"
+                    borderStyle="solid"
+                    borderColor="black"
+                    mt='8rem'
+          />
+          </Section>
 
-            <JavaCoffee boxSize="50px" mb={4} />
+          <Section delay={0.4}>
 
-            <Text display="inline" fontWeight="Bold" fontSize="1.5rem" ml={5}>
-              2020:{" "}
-            </Text>
-            <Text display="inline" fontSize="1.3rem">
-              Started study programming, learning C and Java
-            </Text>
+          {/* I love */}
+          <Box display={{lg:'flex'}}>
+          <Box w={{lg:'45%'}} ml={{xl:'9rem'}}>
+          <Heading variant='section-title' mt='8rem'>/* About me: */</Heading>
+            <Text>I love <strong> new technology, coding </strong> is very fun for me (I spend my time mostly in the blackend )</Text>
+            <Text>When I'm not coding, I like to <strong> read books, philosophy</strong> is my favorite genre and I love Niezsche works</Text>
+            <Text>I also like <strong>gaming, watching movies</strong>  and <strong> spending time with my love one </strong> </Text>
+          </Box>
+
+          <Image src="/images/socrates.png" maxW='300px' ml='5rem' />
+          
+          </Box>
+
+          {/* My social */}
+
+          <Box display={{lg:'flex'}}>
+
+          <Image src="/images/niezsche.jpg" maxW='300px' ml={{xl:'8rem'}} display={{base:'none', lg:'block'}} />
+
+          <Box w={{lg:'45%'}} ml={{lg:'10rem'}}>
+          <Heading variant='section-title' mt='2rem'>/* My socials: */</Heading>
+          
+          <Link href='https://github.com/tuturuuu' target="_blank" fontSize='2rem'>
+          <Button leftIcon={<Github boxSize='20px'/>} 
+          > <Text fontSize='xl'>@tuturuuu</Text> </Button>
+          </Link>
             <br/>
+          <Link href='https://www.linkedin.com/in/minh-viet-960a251b9/' target="_blank" fontSize='2rem'>
+          <Button leftIcon={<Linkedin boxSize='20px'/>} 
+          > <Text fontSize='xl'>Minh Viet</Text> </Button>
+          </Link>
 
-            <Box w="1%" ml={4} mb={4}>
-              <Center>
-                <Divider
-                  height="35px"
-                  orientation="vertical"
-                  borderWidth="1px"
-                  borderStyle="solid"
-                  borderColor="black"
-                />
-              </Center>
-            </Box>
+          <br/>
+          <Link href='https://www.instagram.com/pmviet_/' target="_blank" fontSize='2rem'>
+          <Button leftIcon={<Instagram boxSize='20px'/>} 
+          > <Text fontSize='xl'>@pmviet__</Text> </Button>
+          </Link>
+          <br/>
+          <Link href='https://www.facebook.com/profile.php?id=100004860555884' target="_blank" fontSize='2rem'>
+          <Button leftIcon={<Facebook boxSize='25px'/>} 
+          > <Text fontSize='xl'>Viet Minh</Text> </Button>
+          </Link>
 
-            <University boxSize="50px" mb={4} />
-
-            <Text display="inline" fontWeight="Bold" fontSize="1.5rem" ml={5}>
-              2023:{" "}
-            </Text>
-            <Text display="inline" fontSize="1.3rem">
-              Applied to Swinburne University in Vietnam
-            </Text>
-            <br/>
-
-            <Box w="1%" ml={4} mb={4}>
-              <Center>
-                <Divider
-                  height="35px"
-                  orientation="vertical"
-                  borderWidth="1px"
-                  borderStyle="solid"
-                  borderColor="black"
-                />
-              </Center>
-            </Box>
-
-            <Now boxSize="50px" mb={4} />
-            <Text display="inline" fontWeight="Bold" fontSize="1.5rem" ml={5}>
-              2024 ( now ) :{" "}
-            </Text>
-            <Text display="inline" fontSize="1.3rem">
-              Studing software engineer and looking for a job
-            </Text>
-            <br/>
-
+          </Box>
 
           </Box>
 

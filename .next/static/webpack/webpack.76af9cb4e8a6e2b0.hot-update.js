@@ -7,12 +7,19 @@
  * or disable the default devtool with "devtool: false".
  * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
  */
-self["webpackHotUpdate_N_E"]("webpack",{},
-/******/ function(__webpack_require__) { // webpackRuntimeModules
-/******/ /* webpack/runtime/getFullHash */
-/******/ !function() {
-/******/ 	__webpack_require__.h = function() { return "511519557807f6e8"; }
-/******/ }();
-/******/ 
-/******/ }
+self["webpackHotUpdate_N_E"](
+  "webpack",
+  {},
+  /******/ function (__webpack_require__) {
+    // webpackRuntimeModules
+    /******/ /* webpack/runtime/getFullHash */
+    /******/ !(function () {
+      /******/ __webpack_require__.h = function () {
+        return "511519557807f6e8";
+      };
+      /******/
+    })();
+    /******/
+    /******/
+  },
 );
