@@ -10,8 +10,8 @@ import {
   Link,
 } from "@chakra-ui/react";
 import { useColorModeValue } from "@chakra-ui/react";
-import Section from "../libs/ui/fragments/section";
-import Expertise from "../libs/ui/fragments/expertise-box";
+import Section from "../components/section";
+import Expertise from "../components/expertise-box";
 import {
   Java,
   React,
@@ -20,8 +20,8 @@ import {
   Linkedin,
   Instagram,
   Facebook,
-} from "../libs/ui/fragments/icons";
-import CountUp from "../libs/ui/fragments/countUp";
+} from "../components/icons";
+import CountUp from "../components/countUp";
 
 export default function MainPage() {
   return (
