@@ -31,7 +31,12 @@ export default function Expertise({
           >
             {header}{" "}
           </Heading>
-          <Heading size="md" align="left" paddingTop={2} color={useColorModeValue("darkerBlue", "white")}>
+          <Heading
+            size="md"
+            align="left"
+            paddingTop={2}
+            color={useColorModeValue("darkerBlue", "white")}
+          >
             {subheader}{" "}
           </Heading>
         </Box>

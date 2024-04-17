@@ -1,9 +1,7 @@
-import {
-  extendTheme,
-} from "@chakra-ui/react";
+import { extendTheme } from "@chakra-ui/react";
 import { mode } from "@chakra-ui/theme-tools";
-import "@fontsource/roboto-mono"
-import "@fontsource/roboto"
+import "@fontsource/roboto-mono";
+import "@fontsource/roboto";
 
 const config = {
   initialColorMode: "system",
@@ -21,7 +19,6 @@ const styles = {
 const fonts = {
   heading: "Roboto Mono",
   body: "Roboto Mono",
-  
 };
 
 const components = {
@@ -38,7 +35,7 @@ const components = {
   Text: {
     baseStyle: (props) => ({
       fontSize: "lg",
-      color: mode("#253758", "white")(props)
+      color: mode("#253758", "white")(props),
     }),
   },
 
@@ -62,7 +59,7 @@ const colors = {
   darkerBlue: "#253758",
   normalBlue: "#8584A1",
   darkPurple: "#615086",
-  lightBlue: "#9AB2E7"
+  lightBlue: "#9AB2E7",
 };
 
 const theme = extendTheme({

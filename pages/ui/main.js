@@ -19,10 +19,9 @@ import {
   Github,
   Linkedin,
   Instagram,
-  Facebook
+  Facebook,
 } from "./fragments/icons";
 import CountUp from "./fragments/countUp";
-
 
 export default function MainPage() {
   return (
@@ -58,8 +57,13 @@ export default function MainPage() {
             borderWidth={2}
           />
           <Box ml={{ xl: "6rem", lg: 5 }} align="left" p={5}>
-            <Heading as="h1" size="xl" mb={1} color={useColorModeValue("darkerBlue", "white")}>
-              Hello, I'm Pham Minh Viet
+            <Heading
+              as="h1"
+              size="xl"
+              mb={1}
+              color={useColorModeValue("darkerBlue", "white")}
+            >
+              Hello, I&apos;m Pham Minh Viet
             </Heading>
             <Heading
               size="sm"
@@ -70,7 +74,7 @@ export default function MainPage() {
             </Heading>
 
             <Text>
-              At the moment, I'm a student in Swinburne University of Technology
+              At the moment, I&apos;m a student in Swinburne University of Technology
               🙂
             </Text>
             <Text>and this is going to be my portfolio website!</Text>
@@ -92,11 +96,11 @@ export default function MainPage() {
           <Box display={{ lg: "flex" }}>
             <Box w={{ lg: "55%" }}>
               <Text mb={5}>
-                I'm Pham Minh Viet, a student from Vietnam ❤️. I'm major in
+                I&apos;m Pham Minh Viet, a student from Vietnam ❤️. I&apos;m major in
                 software engineer. I build web applications, mobile applications
                 and games using Godot. In the future, I may learn more about AI,
-                data engineer or cyber security, which I'm interested in, but at
-                the moment, I'm a full-stacked developer.
+                data engineer or cyber security, which I&apos;m interested in, but at
+                the moment, I&apos;m a full-stacked developer.
               </Text>
 
               <Button
@@ -110,7 +114,10 @@ export default function MainPage() {
                 borderRadius="1px"
                 borderColor="black"
                 color={useColorModeValue("white", "black")}
-                _hover={{ bg: useColorModeValue("transparent", "darkBlue") , color: useColorModeValue("darkBlueBlack", "white") }}
+                _hover={{
+                  bg: useColorModeValue("transparent", "darkBlue"),
+                  color: useColorModeValue("darkBlueBlack", "white"),
+                }}
               >
                 Contact me !
               </Button>
@@ -129,10 +136,9 @@ export default function MainPage() {
               <CountUp />
             </Box>
           </Box>
+        </Section>
 
-          </Section>
-
-          <Section delay={0.2}>
+        <Section delay={0.2}>
           {/* Expertise */}
           <Heading
             as="h3"
@@ -189,24 +195,27 @@ export default function MainPage() {
                 />
               }
               underlineColor="lightGreen"
-              text="I self-taught myself to develop native Android applications using Java and Android Studio. And I'll learn Kotlin in the future. "
+              text="I self-taught myself to develop native Android applications using Java and Android Studio. And I&apos;ll learn Kotlin in the future. "
             />
           </Box>
-          </Section>
+        </Section>
 
-          <Section delay={0.3}>
+        <Section delay={0.3}>
           {/* Bio */}
           <Heading as="h3" variant="section-title" mt="10rem" mb="2rem">
             /* Bio */
           </Heading>
-          <Box display={{lg:"flex"}}>
-            
+          <Box display={{ lg: "flex" }}>
             <Box>
-              <Image src="/images/greekEdit.png" maxW='250px' ml={{sm:'4rem'}} alt="GreekEdit"/>
+              <Image
+                src="/images/greekEdit.png"
+                maxW="250px"
+                ml={{ sm: "4rem" }}
+                alt="GreekEdit"
+              />
             </Box>
-            
-            <Box ml={{lg:"4rem"}}>
 
+            <Box ml={{ lg: "4rem" }}>
               <Text display="inline" fontWeight="Bold" fontSize="1.5rem">
                 2005:{" "}
               </Text>
@@ -225,7 +234,6 @@ export default function MainPage() {
                   />
                 </Center>
               </Box>
-
 
               <Text display="inline" fontWeight="Bold" fontSize="1.5rem">
                 2020:{" "}
@@ -246,7 +254,6 @@ export default function MainPage() {
                   />
                 </Center>
               </Box>
-
 
               <Text display="inline" fontWeight="Bold" fontSize="1.5rem">
                 2023:{" "}
@@ -276,66 +283,108 @@ export default function MainPage() {
               </Text>
             </Box>
           </Box>
-          
+
           <Divider
-                    orientation="horizontal"
-                    borderWidth="1px"
-                    borderStyle="solid"
-                    borderColor={useColorModeValue("black", "white")}
-                    mt='8rem'
+            orientation="horizontal"
+            borderWidth="1px"
+            borderStyle="solid"
+            borderColor={useColorModeValue("black", "white")}
+            mt="8rem"
           />
-          </Section>
+        </Section>
 
-          <Section delay={0.4}>
-
+        <Section delay={0.4}>
           {/* I love */}
-          <Box display={{lg:'flex'}}>
-          <Box w={{lg:'45%'}} ml={{xl:'9rem'}}>
-          <Heading variant='section-title' mt='8rem'>/* About me: */</Heading>
-            <Text>I love <strong> new technology, coding </strong> is very fun for me (I spend my time mostly in the blackend )</Text>
-            <Text>When I'm not coding, I like to <strong> read books, philosophy</strong> is my favorite genre and I love Niezsche works</Text>
-            <Text>I also like <strong>gaming, watching movies</strong>  and <strong> spending time with my love one </strong> </Text>
-          </Box>
+          <Box display={{ lg: "flex" }}>
+            <Box w={{ lg: "45%" }} ml={{ xl: "9rem" }}>
+              <Heading variant="section-title" mt="8rem">
+                /* About me: */
+              </Heading>
+              <Text>
+                I love <strong> new technology, coding </strong> is very fun for
+                me (I spend my time mostly in the blackend )
+              </Text>
+              <Text>
+                When I&apos;m not coding, I like to{" "}
+                <strong> read books, philosophy</strong> is my favorite genre
+                and I love Niezsche works
+              </Text>
+              <Text>
+                I also like <strong>gaming, watching movies</strong> and{" "}
+                <strong> spending time with my love one </strong>{" "}
+              </Text>
+            </Box>
 
-          <Image src="/images/socrates.png" maxW='300px' ml={{md:'5rem'}} alt="Aristotle" />
-          
+            <Image
+              src="/images/socrates.png"
+              maxW="300px"
+              ml={{ md: "5rem" }}
+              alt="Aristotle"
+            />
           </Box>
 
           {/* My social */}
 
-          <Box display={{lg:'flex'}}>
+          <Box display={{ lg: "flex" }}>
+            <Image
+              src="/images/niezsche.jpg"
+              maxW="300px"
+              ml={{ xl: "8rem" }}
+              display={{ base: "none", lg: "block" }}
+              alt="Niezsche"
+            />
 
-          <Image src="/images/niezsche.jpg" maxW='300px' ml={{xl:'8rem'}} display={{base:'none', lg:'block'}} alt="Niezsche" />
+            <Box w={{ lg: "45%" }} ml={{ lg: "10rem" }}>
+              <Heading variant="section-title" mt="2rem">
+                /* My socials: */
+              </Heading>
 
-          <Box w={{lg:'45%'}} ml={{lg:'10rem'}}>
-          <Heading variant='section-title' mt='2rem'>/* My socials: */</Heading>
-          
-          <Link href='https://github.com/tuturuuu' target="_blank" fontSize='2rem'>
-          <Button leftIcon={<Github boxSize='20px'/>} 
-          > <Text fontSize='xl'>@tuturuuu</Text> </Button>
-          </Link>
-            <br/>
-          <Link href='https://www.linkedin.com/in/minh-viet-960a251b9/' target="_blank" fontSize='2rem'>
-          <Button leftIcon={<Linkedin boxSize='20px'/>} 
-          > <Text fontSize='xl'>Minh Viet</Text> </Button>
-          </Link>
+              <Link
+                href="https://github.com/tuturuuu"
+                target="_blank"
+                fontSize="2rem"
+              >
+                <Button leftIcon={<Github boxSize="20px" />}>
+                  {" "}
+                  <Text fontSize="xl">@tuturuuu</Text>{" "}
+                </Button>
+              </Link>
+              <br />
+              <Link
+                href="https://www.linkedin.com/in/minh-viet-960a251b9/"
+                target="_blank"
+                fontSize="2rem"
+              >
+                <Button leftIcon={<Linkedin boxSize="20px" />}>
+                  {" "}
+                  <Text fontSize="xl">Minh Viet</Text>{" "}
+                </Button>
+              </Link>
 
-          <br/>
-          <Link href='https://www.instagram.com/pmviet_/' target="_blank" fontSize='2rem'>
-          <Button leftIcon={<Instagram boxSize='20px'/>} 
-          > <Text fontSize='xl'>@pmviet__</Text> </Button>
-          </Link>
-          <br/>
-          <Link href='https://www.facebook.com/profile.php?id=100004860555884' target="_blank" fontSize='2rem'>
-          <Button leftIcon={<Facebook boxSize='25px'/>} 
-          > <Text fontSize='xl'>Viet Minh</Text> </Button>
-          </Link>
-
+              <br />
+              <Link
+                href="https://www.instagram.com/pmviet_/"
+                target="_blank"
+                fontSize="2rem"
+              >
+                <Button leftIcon={<Instagram boxSize="20px" />}>
+                  {" "}
+                  <Text fontSize="xl">@pmviet__</Text>{" "}
+                </Button>
+              </Link>
+              <br />
+              <Link
+                href="https://www.facebook.com/profile.php?id=100004860555884"
+                target="_blank"
+                fontSize="2rem"
+              >
+                <Button leftIcon={<Facebook boxSize="25px" />}>
+                  {" "}
+                  <Text fontSize="xl">Viet Minh</Text>{" "}
+                </Button>
+              </Link>
+            </Box>
           </Box>
-
-          </Box>
-
-
         </Section>
       </Container>
     </>

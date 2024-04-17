@@ -17,8 +17,12 @@ export default function Logo({ color }) {
         ml={{ md: "10" }}
       />
 
-      <Heading size="lg" padding={5} color={useColorModeValue('darkBlue', 'lightBlue')}>
-        Tuturuu's page
+      <Heading
+        size="lg"
+        padding={5}
+        color={useColorModeValue("darkBlue", "lightBlue")}
+      >
+        Tuturuu&apos;s page
       </Heading>
     </Flex>
   );
