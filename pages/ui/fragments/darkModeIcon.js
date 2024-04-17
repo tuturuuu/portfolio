@@ -15,7 +15,7 @@ export function ToggleIcon({ onClick, display, boxSize }) {
       borderStyle="solid"
       borderColor="#707280"
       onClick={onClick}
-      bg={useColorModeValue("darkPink", "veriLightBrown")}
+      bg={useColorModeValue("darkPurple", "white")}
       color={useColorModeValue("veriLightBrown", "darkBrown")}
       display={display}
     />

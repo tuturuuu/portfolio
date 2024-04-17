@@ -1,10 +1,9 @@
 import {
-  background,
-  border,
   extendTheme,
-  textDecoration,
 } from "@chakra-ui/react";
 import { mode } from "@chakra-ui/theme-tools";
+import "@fontsource/roboto-mono"
+import "@fontsource/roboto"
 
 const config = {
   initialColorMode: "system",
@@ -14,48 +13,56 @@ const config = {
 const styles = {
   global: (props) => ({
     body: {
-      bg: mode("#FFFAF5", "#202023")(props),
+      bg: mode("#E8E1E8", "#1C1C24")(props),
     },
   }),
 };
 
 const fonts = {
-  heading: "Roboto",
-  body: "Roboto",
+  heading: "Roboto Mono",
+  body: "Roboto Mono",
+  
 };
 
 const components = {
   Heading: {
     variants: {
-      "section-title": {
+      "section-title": (props) => ({
         marginTop: 3,
         marginBottom: 4,
-        color: "#363844",
-      },
+        color: mode("darkBlue", "lightBlue")(props),
+      }),
     },
   },
 
   Text: {
     baseStyle: (props) => ({
       fontSize: "lg",
+      color: mode("#253758", "white")(props)
     }),
   },
 
   Link: {
     baseStyle: (props) => ({
       fontSize: "lg",
-      color: mode("#363844", "white")(props),
+      color: mode("#253758", "white")(props),
       textUnderlineOffset: 3,
     }),
   },
 };
 
 const colors = {
+  lightPink: "#E1BFD1",
   darkPink: "#b88c8c",
   darkBrown: "#9b7960",
   veriLightBrown: "#FFFAF5",
   darkBlueBlack: "#363844",
   lightBrown: "#cbb19b",
+  darkBlue: "#5C7DBA",
+  darkerBlue: "#253758",
+  normalBlue: "#8584A1",
+  darkPurple: "#615086",
+  lightBlue: "#9AB2E7"
 };
 
 const theme = extendTheme({

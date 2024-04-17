@@ -1,4 +1,5 @@
 import { createIcon, Heading, Flex } from "@chakra-ui/react";
+import { useColorModeValue } from "@chakra-ui/react";
 
 const DuckIcon = createIcon({
   displayName: "Logo",
@@ -16,7 +17,7 @@ export default function Logo({ color }) {
         ml={{ md: "10" }}
       />
 
-      <Heading size="lg" padding={5}>
+      <Heading size="lg" padding={5} color={useColorModeValue('darkBlue', 'lightBlue')}>
         Tuturuu's page
       </Heading>
     </Flex>

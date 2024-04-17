@@ -91,7 +91,7 @@ const Navbar = () => {
 
   return (
     <NavBarContainer>
-      <Logo color={useColorModeValue("darkBlueBlack", "white")} />
+      <Logo color={useColorModeValue("darkerBlue", "white")} />
       <MenuToggle toggle={toggle} isOpen={isOpen} />
       <MenuLinks isOpen={isOpen} />
     </NavBarContainer>

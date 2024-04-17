@@ -1,5 +1,5 @@
 import { Box, Flex, Heading, Text } from "@chakra-ui/react";
-
+import { useColorModeValue } from "@chakra-ui/react";
 export default function Expertise({
   header,
   text,
@@ -12,7 +12,7 @@ export default function Expertise({
       w={{ xl: "33%" }}
       variant="expertise-box"
       borderStyle="solid"
-      borderColor="black"
+      borderColor={useColorModeValue("black", "white")}
       borderWidth="1.5px"
     >
       <Flex mt="20px" mb="20px">
@@ -27,10 +27,11 @@ export default function Expertise({
             textDecor="underline"
             textDecorationColor={underlineColor}
             textDecorationThickness="5px"
+            color={useColorModeValue("darkerBlue", "white")}
           >
             {header}{" "}
           </Heading>
-          <Heading size="md" align="left" paddingTop={2} fontWeight="900">
+          <Heading size="md" align="left" paddingTop={2} color={useColorModeValue("darkerBlue", "white")}>
             {subheader}{" "}
           </Heading>
         </Box>

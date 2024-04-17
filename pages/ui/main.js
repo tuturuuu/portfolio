@@ -8,7 +8,6 @@ import {
   Center,
   Divider,
   Link,
-  IconButton
 } from "@chakra-ui/react";
 import { useColorModeValue } from "@chakra-ui/react";
 import Section from "./fragments/section";
@@ -30,13 +29,13 @@ export default function MainPage() {
     <>
       <Container maxWidth={{ sm: "70%" }}>
         <Box
-          bg="darkBlueBlack"
+          bg={useColorModeValue("darkerBlue", "lightBlue")}
           borderRadius="lg"
           mt={6}
           mb={6}
           p={3}
           textAlign="center"
-          color="white"
+          color={useColorModeValue("white", "darkerBlue")}
         >
           Yes, I did learn react, nextjs and chakra ui for this website
         </Box>
@@ -54,17 +53,17 @@ export default function MainPage() {
             alt="Profile pic"
             maxWidth="200px"
             borderRadius="full"
-            borderColor="lightBrown"
+            borderColor={useColorModeValue("darkerBlue", "white")}
             borderStyle="solid"
             borderWidth={2}
           />
           <Box ml={{ xl: "6rem", lg: 5 }} align="left" p={5}>
-            <Heading as="h1" size="xl" mb={1}>
+            <Heading as="h1" size="xl" mb={1} color={useColorModeValue("darkerBlue", "white")}>
               Hello, I'm Pham Minh Viet
             </Heading>
             <Heading
               size="sm"
-              color={useColorModeValue("GrayText", "lightgray")}
+              color={useColorModeValue("normalBlue", "lightgray")}
               mb={3}
             >
               Full-stacked developer | Mobile developer
@@ -105,13 +104,13 @@ export default function MainPage() {
                 pt={1}
                 fontWeight="bold"
                 fontSize="lg"
-                bg="darkBlueBlack"
+                bg={useColorModeValue("darkBlueBlack", "lightBlue")}
                 borderStyle="solid"
                 borderWidth="2px"
                 borderRadius="1px"
                 borderColor="black"
-                color="white"
-                _hover={{ bg: "transparent", color: "black" }}
+                color={useColorModeValue("white", "black")}
+                _hover={{ bg: useColorModeValue("transparent", "darkBlue") , color: useColorModeValue("darkBlueBlack", "white") }}
               >
                 Contact me !
               </Button>
@@ -152,7 +151,7 @@ export default function MainPage() {
               icon={
                 <Java
                   boxSize={{ md: "16", base: "14" }}
-                  color="black"
+                  color={useColorModeValue("darkerBlue", "white")}
                   fill="white"
                   mr={"5"}
                   ml={"4"}
@@ -168,7 +167,7 @@ export default function MainPage() {
               icon={
                 <React
                   boxSize={{ md: "16", base: "14" }}
-                  color="black"
+                  color={useColorModeValue("darkerBlue", "white")}
                   fill="black"
                   mr={"5"}
                   ml={"4"}
@@ -183,7 +182,7 @@ export default function MainPage() {
               icon={
                 <Android
                   boxSize={{ md: "16", base: "14" }}
-                  color="black"
+                  color={useColorModeValue("darkerBlue", "white")}
                   fill="black"
                   mr={"5"}
                   ml={"4"}
@@ -203,11 +202,10 @@ export default function MainPage() {
           <Box display={{lg:"flex"}}>
             
             <Box>
-            {/* <Image src="/images/me.png" width='25rem'/> */}
-
+              <Image src="/images/greekEdit.png" maxW='250px' ml={{sm:'4rem'}} alt="GreekEdit"/>
             </Box>
             
-            <Box ml="0.5rem">
+            <Box ml={{lg:"4rem"}}>
 
               <Text display="inline" fontWeight="Bold" fontSize="1.5rem">
                 2005:{" "}
@@ -223,7 +221,7 @@ export default function MainPage() {
                     orientation="vertical"
                     borderWidth="1px"
                     borderStyle="solid"
-                    borderColor="black"
+                    borderColor={useColorModeValue("black", "white")}
                   />
                 </Center>
               </Box>
@@ -244,7 +242,7 @@ export default function MainPage() {
                     orientation="vertical"
                     borderWidth="1px"
                     borderStyle="solid"
-                    borderColor="black"
+                    borderColor={useColorModeValue("black", "white")}
                   />
                 </Center>
               </Box>
@@ -265,7 +263,7 @@ export default function MainPage() {
                     orientation="vertical"
                     borderWidth="1px"
                     borderStyle="solid"
-                    borderColor="black"
+                    borderColor={useColorModeValue("black", "white")}
                   />
                 </Center>
               </Box>
@@ -283,7 +281,7 @@ export default function MainPage() {
                     orientation="horizontal"
                     borderWidth="1px"
                     borderStyle="solid"
-                    borderColor="black"
+                    borderColor={useColorModeValue("black", "white")}
                     mt='8rem'
           />
           </Section>
@@ -299,7 +297,7 @@ export default function MainPage() {
             <Text>I also like <strong>gaming, watching movies</strong>  and <strong> spending time with my love one </strong> </Text>
           </Box>
 
-          <Image src="/images/socrates.png" maxW='300px' ml='5rem' />
+          <Image src="/images/socrates.png" maxW='300px' ml={{md:'5rem'}} alt="Aristotle" />
           
           </Box>
 
@@ -307,7 +305,7 @@ export default function MainPage() {
 
           <Box display={{lg:'flex'}}>
 
-          <Image src="/images/niezsche.jpg" maxW='300px' ml={{xl:'8rem'}} display={{base:'none', lg:'block'}} />
+          <Image src="/images/niezsche.jpg" maxW='300px' ml={{xl:'8rem'}} display={{base:'none', lg:'block'}} alt="Niezsche" />
 
           <Box w={{lg:'45%'}} ml={{lg:'10rem'}}>
           <Heading variant='section-title' mt='2rem'>/* My socials: */</Heading>
