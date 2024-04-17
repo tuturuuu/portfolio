@@ -4,7 +4,7 @@ import { Box, Flex, Stack, Text, useColorModeValue } from "@chakra-ui/react";
 import { CloseIcon, HamburgerIcon } from "@chakra-ui/icons";
 import React from "react";
 import Logo from "./logo";
-import { Link } from "@chakra-ui/react";
+import { Link } from "@chakra-ui/next-js";
 import { ToggleIcon } from "./darkModeIcon";
 import { useColorMode } from "@chakra-ui/react";
 
