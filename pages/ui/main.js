@@ -90,7 +90,7 @@ export default function MainPage() {
             align="left"
             mt="10rem"
           >
-            /* Works */
+            Works 
           </Heading>
 
           <Box display={{ lg: "flex" }}>
@@ -147,7 +147,7 @@ export default function MainPage() {
             align="left"
             mt="10rem"
           >
-            /* My skillset */
+            My skillset 
           </Heading>
 
           <Box display={{ xl: "flex" }}>
@@ -203,7 +203,7 @@ export default function MainPage() {
         <Section delay={0.3}>
           {/* Bio */}
           <Heading as="h3" variant="section-title" mt="10rem" mb="2rem">
-            /* Bio */
+             Bio 
           </Heading>
           <Box display={{ lg: "flex" }}>
             <Box>
@@ -298,7 +298,7 @@ export default function MainPage() {
           <Box display={{ lg: "flex" }}>
             <Box w={{ lg: "45%" }} ml={{ xl: "9rem" }}>
               <Heading variant="section-title" mt="8rem">
-                /* About me: */
+                About me: 
               </Heading>
               <Text>
                 I love <strong> new technology, coding </strong> is very fun for
@@ -336,7 +336,7 @@ export default function MainPage() {
 
             <Box w={{ lg: "45%" }} ml={{ lg: "10rem" }}>
               <Heading variant="section-title" mt="2rem">
-                /* My socials: */
+                 My socials: 
               </Heading>
 
               <Link

@@ -1,6 +1,14 @@
 {
   "/_app": "pages/_app.js",
   "/_error": "pages/_error.js",
+  "/ui/fragments/countUp": "pages/ui/fragments/countUp.js",
+  "/": "pages/index.js",
   "/_document": "pages/_document.js",
-  "/": "pages/index.js"
+  "/ui/fragments/darkModeIcon": "pages/ui/fragments/darkModeIcon.js",
+  "/ui/fragments/expertise-box": "pages/ui/fragments/expertise-box.js",
+  "/ui/fragments/logo": "pages/ui/fragments/logo.js",
+  "/ui/fragments/section": "pages/ui/fragments/section.js",
+  "/ui/fragments/navbar": "pages/ui/fragments/navbar.js",
+  "/ui/main": "pages/ui/main.js",
+  "/ui/fragments/icons": "pages/ui/fragments/icons.js"
 }

@@ -1,4 +1,4 @@
-import { extendTheme } from "@chakra-ui/react";
+import { extendTheme, textDecoration } from "@chakra-ui/react";
 import { mode } from "@chakra-ui/theme-tools";
 import "@fontsource/roboto-mono";
 import "@fontsource/roboto";
@@ -28,6 +28,10 @@ const components = {
         marginTop: 3,
         marginBottom: 4,
         color: mode("darkBlue", "lightBlue")(props),
+        textDecoration: 'underline',
+        textUnderlineOffset: 6,
+        textDecorationColor: mode("darkBlue", "lightBlue")(props),
+        textDecorationThickness: 4, 
       }),
     },
   },
