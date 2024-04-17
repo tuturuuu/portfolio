@@ -8,7 +8,7 @@ import { Link } from "@chakra-ui/react";
 import { ToggleIcon } from "./darkModeIcon";
 import { useColorMode } from "@chakra-ui/react";
 
-const MenuItem = ({ children, isLast, to = "/", ...rest }) => {
+const MenuItem = ({ children, to = "/", ...rest }) => {
   return (
     <Link href={to} variant="menuLink">
       <Text display="block" {...rest}>
