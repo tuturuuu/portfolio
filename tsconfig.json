@@ -17,7 +17,7 @@
     "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx",
-    "pages/ui/fragments/timeline.js"
+    "libs/ui/fragments/timeline.js"
   ],
   "exclude": ["node_modules"]
 }

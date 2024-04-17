@@ -6,13 +6,12 @@ export function ToggleIcon({ onClick, display, boxSize }) {
   return (
     <IconButton
       icon={useColorModeValue(<MoonIcon />, <SunIcon />)}
-      as="Button"
+      as="button" // Use lowercase "button" for consistency
       mr={3}
       boxSize={boxSize}
       p={2}
       borderRadius={8}
       borderWidth={1}
-      borderStyle="solid"
       borderColor="#707280"
       onClick={onClick}
       bg={useColorModeValue("darkPurple", "white")}
