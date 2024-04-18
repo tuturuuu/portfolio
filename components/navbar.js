@@ -54,10 +54,12 @@ const NavBarContainer = ({ children }) => {
       justify={{ md: "center", base: "space-between" }}
       wrap="wrap"
       w="100%"
-      mb={8}
-      p={8}
-      bg="transparent"
+      backgroundColor={useColorModeValue("rgba(218, 206, 255, 0.8)", "rgba(0, 0, 0, 0.8)")}
+      backdropFilter="saturate(180%) blur(5px)"
       color={useColorModeValue("darkBlueBlack", "white")}
+      position='fixed'
+      top='0'
+      zIndex='200'
     >
       {children}
     </Flex>
@@ -68,7 +70,7 @@ const MenuToggle = ({ toggle, isOpen }) => {
   const { toggleColorMode } = useColorMode();
   return (
     <>
-      <Box display={{ base: "block", md: "none" }} onClick={toggle}>
+      <Box display={{ base: "block", md: "none" }} onClick={toggle} mr='1rem'>
         <ToggleIcon
           onClick={(event) => {
             event.stopPropagation();

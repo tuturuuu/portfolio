@@ -26,7 +26,7 @@ import CountUp from "../components/countUp";
 const IndexPage = () => {
   return (
     <>
-      <Container maxWidth={{ sm: "70%" }}>
+      <Container maxWidth={{ sm: "70%" }} mt='5rem'>
         <Box
           bg={useColorModeValue("darkerBlue", "lightBlue")}
           borderRadius="lg"
@@ -41,7 +41,7 @@ const IndexPage = () => {
 
         <Box
           flexShrink="0"
-          display={{ lg: "flex" }}
+          display={{ xl: "flex" }}
           align="center"
           p={{ xl: 10 }}
           mb="2rem"
@@ -236,7 +236,7 @@ const IndexPage = () => {
               </Box>
 
               <Text display="inline" fontWeight="Bold" fontSize="1.5rem">
-                2020:{" "}
+                2020{" "}
               </Text>
               <Text display="inline" fontSize="1.3rem">
                 Started study programming, learning C and Java
@@ -256,7 +256,7 @@ const IndexPage = () => {
               </Box>
 
               <Text display="inline" fontWeight="Bold" fontSize="1.5rem">
-                2023:{" "}
+                2023{" "}
               </Text>
               <Text display="inline" fontSize="1.3rem">
                 Applied to Swinburne University in Vietnam
@@ -276,7 +276,7 @@ const IndexPage = () => {
               </Box>
 
               <Text display="inline" fontWeight="Bold" fontSize="1.5rem">
-                2024 ( now ) :{" "}
+                2024 ( now ) {" "}
               </Text>
               <Text display="inline" fontSize="1.3rem">
                 Studing software engineer and looking for a job
@@ -298,7 +298,7 @@ const IndexPage = () => {
           <Box display={{ lg: "flex" }}>
             <Box w={{ lg: "45%" }} ml={{ xl: "9rem" }}>
               <Heading variant="section-title" mt="8rem">
-                About me: 
+                About me
               </Heading>
               <Text>
                 I love <strong> new technology, coding </strong> is very fun for
@@ -336,7 +336,7 @@ const IndexPage = () => {
 
             <Box w={{ lg: "45%" }} ml={{ lg: "10rem" }}>
               <Heading variant="section-title" mt="2rem">
-                 My socials: 
+                 My socials
               </Heading>
 
               <Link
