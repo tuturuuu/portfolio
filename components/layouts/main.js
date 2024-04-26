@@ -1,7 +1,7 @@
 import Head from "next/head";
 import Navbar from "../navbar";
 import { Box, Container } from "@chakra-ui/react";
-import Banner from "../banner"
+import Banner from "../banner";
 
 const Main = ({ children }) => {
   return (
@@ -15,8 +15,6 @@ const Main = ({ children }) => {
       <Banner />
 
       <Container maxW="70%" pt={14} mt={10}>
-      
-
         {children}
       </Container>
     </Box>
