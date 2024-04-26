@@ -14,7 +14,7 @@ export default function Logo({ color }) {
         boxSize={{ md: "16", base: "14" }}
         color={color}
         fill="black"
-        ml={{ md: "10" }}
+        ml={{ md: "10", base:'5' }}
       />
 
       <Heading

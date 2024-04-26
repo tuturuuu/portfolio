@@ -3,9 +3,9 @@ import { useColorModeValue } from "@chakra-ui/react";
 import TextAnim from "./typing animation/textAnim";
 import RedoAnimText from "./typing animation/redoAnimText";
 const Banner = () => (
-  <Box align="center">
+  <Box align="center" mt='13rem' mb='4rem'>
     <TextAnim />
-    <Box height={2} mt={3} mb={3}>
+    <Box height={3} mt={4} mb={6}>
       <RedoAnimText />
     </Box>
 
