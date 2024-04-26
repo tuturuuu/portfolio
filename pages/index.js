@@ -26,7 +26,9 @@ import CountUp from "../components/countUp";
 const IndexPage = () => {
   return (
     <>
-      <Container maxWidth={{ sm: "70%" }} mt='5rem'>
+   
+
+
         <Box
           bg={useColorModeValue("darkerBlue", "lightBlue")}
           borderRadius="lg"
@@ -74,8 +76,8 @@ const IndexPage = () => {
             </Heading>
 
             <Text>
-              At the moment, I&apos;m a student in Swinburne University of Technology
-              🙂
+              At the moment, I&apos;m a student in Swinburne University of
+              Technology 🙂
             </Text>
             <Text>and this is going to be my portfolio website!</Text>
           </Box>
@@ -90,17 +92,18 @@ const IndexPage = () => {
             align="left"
             mt="10rem"
           >
-            Works 
+            Works
           </Heading>
 
           <Box display={{ lg: "flex" }}>
             <Box w={{ lg: "55%" }}>
               <Text mb={5}>
-                I&apos;m Pham Minh Viet, a student from Vietnam ❤️. I&apos;m major in
-                software engineer. I build web applications, mobile applications
-                and games using Godot. In the future, I may learn more about AI,
-                data engineer or cyber security, which I&apos;m interested in, but at
-                the moment, I&apos;m a full-stacked developer.
+                I&apos;m Pham Minh Viet, a student from Vietnam ❤️. I&apos;m
+                major in software engineer. I build web applications, mobile
+                applications and games using Godot. In the future, I may learn
+                more about AI, data engineer or cyber security, which I&apos;m
+                interested in, but at the moment, I&apos;m a full-stacked
+                developer.
               </Text>
 
               <Button
@@ -147,7 +150,7 @@ const IndexPage = () => {
             align="left"
             mt="10rem"
           >
-            My skillset 
+            My skillset
           </Heading>
 
           <Box display={{ xl: "flex" }}>
@@ -195,7 +198,7 @@ const IndexPage = () => {
                 />
               }
               underlineColor="lightGreen"
-              text="I self-taught myself to develop native Android applications using Java and Android Studio. And I&apos;ll learn Kotlin in the future. "
+              text="I self-taught myself to develop native Android applications using Java and Android Studio. And I'll learn Kotlin in the future. "
             />
           </Box>
         </Section>
@@ -203,7 +206,7 @@ const IndexPage = () => {
         <Section delay={0.3}>
           {/* Bio */}
           <Heading as="h3" variant="section-title" mt="10rem" mb="2rem">
-             Bio 
+            Bio
           </Heading>
           <Box display={{ lg: "flex" }}>
             <Box>
@@ -276,7 +279,7 @@ const IndexPage = () => {
               </Box>
 
               <Text display="inline" fontWeight="Bold" fontSize="1.5rem">
-                2024 ( now ) {" "}
+                2024 ( now ){" "}
               </Text>
               <Text display="inline" fontSize="1.3rem">
                 Studing software engineer and looking for a job
@@ -336,7 +339,7 @@ const IndexPage = () => {
 
             <Box w={{ lg: "45%" }} ml={{ lg: "10rem" }}>
               <Heading variant="section-title" mt="2rem">
-                 My socials
+                My socials
               </Heading>
 
               <Link
@@ -386,9 +389,8 @@ const IndexPage = () => {
             </Box>
           </Box>
         </Section>
-      </Container>
     </>
-  )
+  );
 };
 
 export default IndexPage;
